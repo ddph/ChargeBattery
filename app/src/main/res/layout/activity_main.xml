@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1380px">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="fill_parent"
+            android:layout_height="1380px" />
+
+        <!-- 点击这里跳转到设置界面 -->
+        <LinearLayout
+            android:id="@+id/ll_hint"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:padding="5dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_splash"
+        android:layout_width="match_parent"
+        android:layout_height="540px"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.clound.battery.view.view.FlashTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="正在初始化..."
+            android:textSize="77sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="540px"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="20px"
+            android:paddingLeft="20px"
+            android:paddingTop="20px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20px"
+            android:paddingRight="20px"
+            android:paddingTop="20px">
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="280px"
+                android:layout_height="280px"
+                android:background="@drawable/shape"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_rates"
+                android:layout_width="280px"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:background="@drawable/shapetv"
+                android:text=""
+                android:textColor="@color/green"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

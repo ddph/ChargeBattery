@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="36sp"
+            android:textColor="@color/green"
+            android:layout_height="wrap_content"
+            android:text="卡号:" />
+
+        <TextView
+            android:id="@+id/tv_cardno"
+            android:textSize="36sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="36sp"
+            android:textColor="@color/green"
+            android:layout_height="wrap_content"
+            android:text="剩余余额:" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:textSize="36sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="36sp"
+            android:textColor="@color/green"
+            android:layout_height="wrap_content"
+            android:text="卡类型:" />
+
+        <TextView
+            android:id="@+id/tv_cardno_type"
+            android:textSize="36sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="36sp"
+            android:textColor="@color/green"
+            android:layout_height="wrap_content"
+            android:text="是否可充电:" />
+
+        <TextView
+            android:id="@+id/tv_charger"
+            android:textSize="36sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:textSize="36sp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="36sp"
+            android:textColor="@color/green"
+            android:layout_height="wrap_content"
+            android:text="充电时间:" />
+
+        <TextView
+            android:id="@+id/tv_battery_time"
+            android:textSize="36sp"
+            android:textColor="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

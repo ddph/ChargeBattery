@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="90px"
+    android:layout_height="110px"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:ignore="MissingPrefix">
+
+    <LinearLayout
+        android:id="@+id/lv_hl_bg"
+        android:layout_width="90px"
+        android:layout_height="110px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_hl_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:textSize="50sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hl_state"
+                fontPath="fonts/kaiti.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/kong"
+                android:textSize="22sp"
+                android:visibility="visible" />
+
+            <com.clound.battery.view.countdown.CountdownView
+                android:id="@+id/cv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isHideTimeBackground="true"
+                app:isShowDay="false"
+                app:isShowHour="false"
+                app:isShowMillisecond="false"
+                app:isShowMinute="true"
+                app:isShowSecond="false"
+                app:isTimeTextBold="true"
+                app:timeTextColor="#fff"
+                app:timeTextSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
